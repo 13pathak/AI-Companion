@@ -1,0 +1,78 @@
+name: pre-release
+on:
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - "src/**"
+#      - "!src/**/*.json"
+#      - "build.mjs"
+#    tags-ignore:
+#      - "v*"
+
+permissions:
+  id-token: "write"
+  contents: "write"
+
+jobs:
+  build_and_release:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - name: Detect Node version
+        run: echo "NODE_VERSION=$(node -p 'process.versions.node')" >> $GITHUB_ENV
+      - run: npm ci
+      - name: Cache Webpack filesystem cache
+        uses: actions/cache@v5
+        with:
+          path: |
+            .cache/webpack
+            node_modules/.cache/webpack
+          key: ${{ runner.os }}-node${{ env.NODE_VERSION }}-webpack-${{ hashFiles('**/package-lock.json', 'build.mjs') }}
+          restore-keys: |
+            ${{ runner.os }}-node${{ env.NODE_VERSION }}-webpack-
+      - run: npm run build
+
+      - uses: josStorer/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYY_MMDD_HHmm
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Chromium_Build_${{ steps.current-time.outputs.formattedTime }}
+          path: build/chromium/*
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Firefox_Build_${{ steps.current-time.outputs.formattedTime }}
+          path: build/firefox/*
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Chromium_Build_WithoutKatex_${{ steps.current-time.outputs.formattedTime }}
+          path: build/chromium-without-katex-and-tiktoken/*
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Firefox_Build_WithoutKatex_${{ steps.current-time.outputs.formattedTime }}
+          path: build/firefox-without-katex-and-tiktoken/*
+
+      - uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            build/chromium.zip
+            build/firefox.zip
+            build/chromium-without-katex-and-tiktoken.zip
+            build/firefox-without-katex-and-tiktoken.zip
