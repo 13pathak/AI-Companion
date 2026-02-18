@@ -145,20 +145,27 @@ export function SelectionTools({ config, updateConfig }) {
               >
                 <PencilIcon />
               </div>
-              {override && (
-                <div
-                  style={{ cursor: 'pointer' }}
-                  onClick={(e) => {
-                    e.preventDefault()
+              <div
+                style={{ cursor: 'pointer' }}
+                onClick={(e) => {
+                  e.preventDefault()
+                  if (override) {
                     const overrides = { ...config.selectionToolsOverrides }
                     delete overrides[key]
                     updateConfig({ selectionToolsOverrides: overrides })
-                  }}
-                  title={t('Reset to default')}
-                >
-                  <TrashIcon />
-                </div>
-              )}
+                  } else {
+                    const newSelectionTools = config.selectionTools.filter((k) => k !== key)
+                    const newActiveSelectionTools = config.activeSelectionTools.filter((k) => k !== key)
+                    updateConfig({
+                      selectionTools: newSelectionTools,
+                      activeSelectionTools: newActiveSelectionTools,
+                    })
+                  }
+                }}
+                title={override ? t('Reset to default') : t('Remove tool')}
+              >
+                <TrashIcon />
+              </div>
             </div>
             {editing && editingTool.isDefaultOverride && editingTool.key === key ? (
               <div style={{ width: '100%', marginTop: '10px' }}>{editingComponent}</div>
@@ -166,8 +173,8 @@ export function SelectionTools({ config, updateConfig }) {
           </label>
         )
       })}
-      {config.customSelectionTools.map(
-        (tool, index) =>
+      {
+        config.customSelectionTools.map((tool, index) =>
           tool.name &&
           (editing && editingIndex === index ? (
             editingComponent
@@ -211,23 +218,26 @@ export function SelectionTools({ config, updateConfig }) {
               </div>
             </label>
           )),
-      )}
+        )
+      }
       <div style={{ height: '30px' }} />
-      {editing && !editingTool.isDefaultOverride && editingIndex === -1 ? (
-        editingComponent
-      ) : (
-        <button
-          onClick={(e) => {
-            e.preventDefault()
-            setEditing(true)
-            setEditingTool(defaultTool)
-            setEditingIndex(-1)
-            setErrorMessage('')
-          }}
-        >
-          {t('New')}
-        </button>
-      )}
+      {
+        editing && !editingTool.isDefaultOverride && editingIndex === -1 ? (
+          editingComponent
+        ) : (
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              setEditing(true)
+              setEditingTool(defaultTool)
+              setEditingIndex(-1)
+              setErrorMessage('')
+            }}
+          >
+            {t('New')}
+          </button>
+        )
+      }
     </>
   )
 }
