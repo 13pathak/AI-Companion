@@ -6,12 +6,12 @@
 
 <div align="center">
 
-Deep ChatGPT integrations in your browser, completely for free.
+This repository is based on [ChatGPTBox](https://github.com/ChatGPTBox-dev/chatGPTBox). The installation links and release badge below refer to the upstream project.
+
+ChatGPT and other AI integrations in your browser. Provider subscriptions or API charges may apply.
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
-[![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
 
@@ -24,21 +24,17 @@ English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&
 [![Android][Android-image]][Android-url]
 [![Github][Github-image]][Github-url]
 
-[Guide](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Preview](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Development&Contributing][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video Demonstration](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#Credit)
+[Guide](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Preview](#preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Development&Contributing][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video Demonstration](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#credit)
 
 [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE
+[license-url]: LICENSE
 
 [release-image]: https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg
 
 [release-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest
-
-[verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -133,10 +129,10 @@ English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&
 
 ## Credit
 
-This project is based on one of my other repositories, [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
+ChatGPTBox was originally based on [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
 
 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) is forked
-from [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) (I learned a lot from that)
+from [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)
 and detached since 14 December of 2022
 
 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) is inspired

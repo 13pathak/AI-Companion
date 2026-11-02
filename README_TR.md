@@ -6,13 +6,13 @@
 
 <div align="center">
 
-Tarayıcınıza derin ChatGPT entegrasyonu, tamamen ücretsiz.
+Bu depo [ChatGPTBox](https://github.com/ChatGPTBox-dev/chatGPTBox) projesini temel alır. Aşağıdaki kurulum bağlantıları ve sürüm rozeti üst projeye aittir.
+
+Tarayıcınızda ChatGPT ve diğer yapay zekâ entegrasyonları. Sağlayıcı abonelikleri veya API ücretleri geçerli olabilir.
 
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
-[![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 [English](README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; Türkçe
 
@@ -25,21 +25,17 @@ Tarayıcınıza derin ChatGPT entegrasyonu, tamamen ücretsiz.
 [![Android][Android-image]][Android-url]
 [![Github][Github-image]][Github-url]
 
-[Rehber](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Önizleme](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Gelişim ve Katkı Sağlama][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#Credit)
+[Rehber](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Önizleme](#önizleme) &nbsp;&nbsp;|&nbsp;&nbsp; [Gelişim ve Katkı Sağlama][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Katkıda Bulunanlar](#katkıda-bulunanlar)
 
 [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE
+[license-url]: LICENSE
 
 [release-image]: https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg
 
 [release-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest
-
-[verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -132,10 +128,10 @@ Tarayıcınıza derin ChatGPT entegrasyonu, tamamen ücretsiz.
 
 ## Katkıda Bulunanlar
 
-Bu proje diğer repolarımın birisinden baz alınmıştır.
+ChatGPTBox başlangıçta şu projeyi temel almıştır:
 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
 
-[josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) projesi [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) projesinden "fork"lanmıştır (Ondan çok şey öğrendim)
-ve 14 Aralık 2022'den beri bağımsızım
+[josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) projesi [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) projesinden "fork"lanmıştır
+ve 14 Aralık 2022'de üst projeden ayrılmıştır
 
 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) projesi [ZohaibAhmed/ChatGPT-Google](https://github.com/ZohaibAhmed/ChatGPT-Google) ([upstream-c54528b](https://github.com/wong2/chatgpt-google-extension/commit/c54528b0e13058ab78bfb433c92603db017d1b6b)) projesinden esinlenilmiştir

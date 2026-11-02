@@ -6,12 +6,12 @@
 
 <div align="center">
 
-深い ChatGPT 統合をブラウザに、完全無料で。
+このリポジトリは [ChatGPTBox](https://github.com/ChatGPTBox-dev/chatGPTBox) を基にしています。以下のインストールリンクとリリースバッジは上流プロジェクトのものです。
+
+ChatGPT やその他の AI をブラウザに統合します。プロバイダーのサブスクリプション料金や API 利用料金がかかる場合があります。
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
-[![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 [English](README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; 日本語 &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
 
@@ -28,17 +28,13 @@
 
 [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE
+[license-url]: LICENSE
 
 [release-image]: https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg
 
 [release-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest
-
-[verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -74,7 +70,7 @@
 
 - https://github.com/BerriAI/litellm / https://github.com/songquanpeng/one-api のようなプロジェクトを使用して、LLM APIをOpenAI形式に変換し、それらをChatGPTBoxの `カスタムモデル` モードと組み合わせて使用することができます
 
-- もちろんです。ChatGPTBoxの `カスタムモデル` モードを使用する際には、[Ollama](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/616#issuecomment-1975186467) / https://openrouter.ai/docs#models もご利用いただけます
+- ChatGPTBoxの `カスタムモデル` モードを使用する際には、[Ollama](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/616#issuecomment-1975186467) / https://openrouter.ai/docs#models もご利用いただけます
 
 ## ✨ 機能
 
@@ -131,8 +127,8 @@
 
 ## クレジット
 
-このプロジェクトは、私の他のリポジトリ [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) に基づいています
+ChatGPTBox は、もともと [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) に基づいています
 
-[josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) は [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) (参考にしました)からフォークされ、2022年12月14日から切り離されています
+[josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) は [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)からフォークされ、2022年12月14日から切り離されています
 
 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) は [ZohaibAhmed/ChatGPT-Google](https://github.com/ZohaibAhmed/ChatGPT-Google) にインスパイアされています([upstream-c54528b](https://github.com/wong2/chatgpt-google-extension/commit/c54528b0e13058ab78bfb433c92603db017d1b6b))

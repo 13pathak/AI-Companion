@@ -6,12 +6,12 @@
 
 <div align="center">
 
+本仓库基于 [ChatGPTBox](https://github.com/ChatGPTBox-dev/chatGPTBox)。下方安装链接和发布徽章指向上游项目。
+
 将ChatGPT深度集成到浏览器中, 你所需要的一切均在于此
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
-[![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 [English](README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; 简体中文 &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
 
@@ -24,21 +24,17 @@
 [![Android][Android-image]][Android-url]
 [![Github][Github-image]][Github-url]
 
-[使用指南](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [效果预览](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [开发&贡献][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [视频演示](https://www.bilibili.com/video/BV1524y1x7io) &nbsp;&nbsp;|&nbsp;&nbsp; [鸣谢](#Credit)
+[使用指南](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [效果预览](#preview) &nbsp;&nbsp;|&nbsp;&nbsp; [开发&贡献][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [视频演示](https://www.bilibili.com/video/BV1524y1x7io) &nbsp;&nbsp;|&nbsp;&nbsp; [鸣谢](#credit)
 
 [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE
+[license-url]: LICENSE
 
 [release-image]: https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg
 
 [release-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest
-
-[verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -72,9 +68,7 @@
 
 - 你可以使用像 https://github.com/BerriAI/litellm / https://github.com/songquanpeng/one-api 这样的项目，将各种 大语言模型 API 转换为OpenAI格式，并与ChatGPTBox的`自定义模型`模式结合使用
 
-- 对于国内用户, 有GPT, Midjourney, Netflix等账号需求的, 可以考虑此站点购买合租, 此链接购买的订单也会给我带来一定收益, 作为对本项目的支持: https://nf.video/yinhe/web?sharedId=84599
-
-- 三方API服务兼容, 查看 https://api2d.com/r/193934 和 https://openrouter.ai/docs#models, 该服务并不是由我提供的, 但对于获取账号困难的用户可以考虑, 使用方法: [视频](https://www.bilibili.com/video/BV1bo4y1h7Hb/) [图文](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/166#issuecomment-1504704489)
+- 支持第三方 API 服务，例如 https://openrouter.ai/docs#models。服务由相应提供商运营，可能需要账户并收取 API 使用费用。
 
 - 离线/自托管模型 现已支持, 在`自定义模型`模式下使用, 具体查看 [Ollama](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/616#issuecomment-1975186467) / [RWKV-Runner](https://github.com/josStorer/RWKV-Runner), 你还可以部署wenda (https://github.com/wenda-LLM/wenda), 配合自定义模型模式使用, 从而调用各类本地模型, 参考 [#397](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/397) 修改API URL
 
@@ -133,10 +127,10 @@
 
 ## Credit
 
-该项目基于我的另一个项目 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
+ChatGPTBox 最初基于 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
 
 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
-fork自 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)(我从中学到很多)
+fork自 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)
 并在2022年12月14日与上游分离
 
 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) 的想法源于

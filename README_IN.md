@@ -6,12 +6,12 @@
 
 <div align="center">
 
-Integrasi Deep ChatGPT di browser Anda, sepenuhnya gratis.
+Repositori ini didasarkan pada [ChatGPTBox](https://github.com/ChatGPTBox-dev/chatGPTBox). Tautan instalasi dan lencana rilis di bawah merujuk ke proyek upstream.
+
+Integrasi ChatGPT dan AI lainnya di browser Anda. Langganan atau biaya API dari penyedia mungkin berlaku.
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
-[![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 [Inggris](README.md) &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
 
@@ -24,21 +24,17 @@ Integrasi Deep ChatGPT di browser Anda, sepenuhnya gratis.
 [![Android][Android-image]][Android-url]
 [![Github][Github-image]][Github-url]
 
-[Panduan](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Pratinjau](#Pratinjau) &nbsp;&nbsp;|&nbsp;&nbsp; [Pengembangan & Berkontribusi][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Demonstrasi Video](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Kredit](#Kredit)
+[Panduan](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Pratinjau](#pratinjau) &nbsp;&nbsp;|&nbsp;&nbsp; [Pengembangan & Berkontribusi][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Demonstrasi Video](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Kredit](#kredit)
 
 [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE
+[license-url]: LICENSE
 
 [release-image]: https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg
 
 [release-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest
-
-[verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -130,10 +126,10 @@ Integrasi Deep ChatGPT di browser Anda, sepenuhnya gratis.
 
 ## Kredit
 
-Proyek ini didasarkan pada salah satu repositori saya yang lain, [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
+ChatGPTBox awalnya didasarkan pada [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension)
 
 [josStorer/chatGPT-search-engine-extension](https://github.com/josStorer/chatGPT-search-engine-extension) bercabang
-dari [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) (Saya belajar banyak dari situ)
+dari [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)
 dan terlepas sejak 14 Desember 2022
 
 [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension) terinspirasi
